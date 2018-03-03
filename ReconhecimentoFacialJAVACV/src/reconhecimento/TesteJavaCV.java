@@ -5,6 +5,8 @@
  */
 package reconhecimento;
 
+import org.bytedeco.javacpp.opencv_face.FaceRecognizer;
+import static org.bytedeco.javacpp.opencv_face.createEigenFaceRecognizer;
 /**
  *
  * @author esdra
@@ -16,6 +18,11 @@ public class TesteJavaCV {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        FaceRecognizer r = createEigenFaceRecognizer();
+        
     }
+
+   
     
 }
